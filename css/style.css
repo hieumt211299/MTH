@@ -1,0 +1,293 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container-fluid {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #121315;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 50px;
+  margin: 0 auto;
+  position: relative;
+  width: 1005px;
+}
+
+.textbox {
+  padding: 15px;
+}
+.textbox .heading {
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+.textbox .desc {
+  font-size: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.textbox .btnlearnmore {
+  font-size: 14px;
+  color: black;
+}
+
+.header {
+  width: 100%;
+  background-color: #121315;
+}
+.header .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 30px;
+}
+.header__menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu ul a {
+  padding-left: 35px;
+  padding-right: 35px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.product {
+  padding-top: 75px;
+}
+.product .product__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.product .product__row .textbox {
+  padding-left: 80px;
+  width: 300px;
+}
+.product .product__row .textbox p {
+  padding-bottom: 20px;
+}
+.product .product__row .textbox a {
+  padding-top: 20px;
+  color: black;
+  font-size: 14px;
+}
+.product .product__row .product__row-img img {
+  max-width: 515px;
+  max-height: 335px;
+}
+
+.quality .textbox {
+  margin: auto;
+  text-align: center;
+  width: 430px;
+}
+.quality .quality__video {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quality .quality__video .quality__video-item {
+  text-align: center;
+}
+.quality .quality__video .quality__video-item .circle {
+  padding-bottom: 15px;
+  position: relative;
+}
+.quality .quality__video .quality__video-item .circle .icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #baa786;
+}
+.quality .quality__video .quality__video-item p {
+  padding-top: 15px;
+  font-size: 16px;
+}
+
+.scdesign {
+  position: relative;
+}
+.scdesign .textbox {
+  position: absolute;
+  top: 280%;
+}
+.scdesign .textbox .heading {
+  color: #bea67c;
+  font-size: 40px;
+  width: 420px;
+  padding-bottom: 15px;
+}
+.scdesign .textbox .desc {
+  font-size: 16px;
+  width: 550px;
+  padding-bottom: 15px;
+  color: #fff;
+}
+.scdesign .textbox .btnwatchvideo {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid;
+  width: 255px;
+}
+.scdesign .textbox .btnwatchvideo .icon {
+  padding-right: 10px;
+}
+
+.scaboutus .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.scaboutus .container .scaboutus__img {
+  padding-right: 35px;
+}
+.scaboutus .container .textbox .desc {
+  max-width: 355px;
+}
+.scaboutus .container .textbox .btnlearnmore {
+  color: black;
+}/*# sourceMappingURL=style.css.map */

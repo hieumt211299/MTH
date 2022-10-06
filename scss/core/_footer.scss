@@ -1,0 +1,29 @@
+// css footer
+.footer {
+    --text_cl_grey:#b0b0b0;
+    background-color: $black_cl;
+    bottom: 0px;
+    width: 100%;
+    font-size: 12px;
+    font-family: pr;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .foorter__copyright {
+        p {
+            color: var(--text_cl_grey);
+        }
+    }
+
+    &__backtop {
+        text-transform: uppercase;
+        color: var(--text_cl_grey);
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,179 @@
+// css header
+header{
+    --heightHeader:80px;
+    height: var(--heightHeader);
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+
+    transition: 00.3s;
+    .container-fluid{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        .right{
+            display: inline-flex;
+            height: 100%;
+            align-items: center;
+                    .header__lang {
+                            height: 100%;
+                            position: relative;
+                    
+                            &-current {
+                                cursor: pointer;
+                                display: inline-flex;
+                                height: 100%;
+                                align-items: center;
+                    
+                                span {
+                                    padding-right: 5px;
+                                }
+                            }
+                    
+                            &-select {
+                                position: absolute;
+                                height: 100%;
+                                background-color: $bg-main-cl;
+                                width: auto;
+                                height: auto;
+                                padding: 20px;
+                                right: 0px;
+                                top: 70px;
+                                text-align: right;
+                                
+                                opacity: 0;
+                                pointer-events: none;
+                                transition: $t;
+                                &.active{
+                                    opacity: 1;
+                                    pointer-events:auto ;
+                                }
+                                .lang-select-item{
+                                    color: $black-cl;
+                                    padding: 5px 0;
+                                    &.active{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        
+        }
+        .header__menu{
+            height: 100%;
+            color: $white-cl;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: pb;
+            font-size: 15px;
+            color: $text-cl;
+            ul{
+                display: flex;
+                
+                li{
+                    height: 100%;
+                    a{
+                        overflow: hidden;
+                        color:$text-cl;
+                        padding: 0 35px;
+                        @include transition($t);
+                        &:hover{
+                            opacity: 0.5;
+                            @include transition($t)
+                        }
+                    }
+                }
+            }
+        }
+        .header__btnmenu{
+            cursor: pointer;
+            z-index: 300;
+            display: block;
+            width: 40px;
+            height: 22px;
+            position: relative;
+            margin-left: 5px;
+            margin-right: 20px;
+            display: none;
+            @include transition-delay($t);
+            span{
+            width: 100%;
+            height: 2px;
+            display: block;
+            background: $yellow-cl;
+            position: absolute;
+            top: 50%;
+            transition: $t;
+            }
+            &::before{
+                content: '';
+                width: 100%;
+                height: 2px;
+                display: block;
+                background-color: $yellow-cl;
+                position: absolute;
+                top: 0;
+                transform: rotate(0deg) translate(0px,0px);
+            }
+            &::after{
+                content: '';
+                width: 100%;
+                height: 2px;
+                display: block;
+                background-color: $yellow-cl;
+                position: absolute;
+                bottom: -2px;
+                transform: rotate(0deg) translate(0px, 0px);
+            }
+            &.active{
+                &::before{
+                    transform: rotate(50deg) translate(11px, 4px);
+                    transition: $t;
+                }
+                
+                &::after{
+                    transform: rotate(-50deg) translate(10px, -4px);
+                    transition: $t;
+                }
+                span{
+                    opacity: 0;
+                    transition: $t;
+                }
+            }
+        }
+    }
+    nav{
+        display: none;
+    }
+    @include xs{
+    --heightHeader: 60px;
+    .container-fluid {
+            .header__menu {
+                display: none;
+            }
+            .header__btnmenu{
+                display: block;
+            }
+        }
+    }
+    @include xxs{
+    --heightHeader: 60px;
+    .container-fluid {
+            .header__menu {
+                display: none;
+            }.header__btnmenu {
+                display: block;
+            }
+        }
+    }
+    &.active{
+        background-color: black;
+        transition: 0.3s;
+    }
+}

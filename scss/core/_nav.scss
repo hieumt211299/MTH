@@ -1,0 +1,28 @@
+// css navigator (Menu)
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background: #161616;
+    z-index: 200;
+    top: 80px;
+    pointer-events: none;
+    opacity: 0;
+    @include transition($t);
+    li{
+        text-align: center;
+        padding: 20px;
+    a{
+        color: $white-cl;
+    }
+    }
+    &.active{
+        pointer-events: auto;
+        opacity: 1;
+        @include transition($t);
+    }
+}

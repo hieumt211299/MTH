@@ -1,0 +1,30 @@
+.bt.btnmain{
+    border: 2px solid $white-cl;
+    padding: 10px 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $white-cl;
+    text-transform: uppercase;
+    margin-top: 20px;
+    @include transition(0.3s);
+    i{
+        display: block;
+        margin-left:15px ;
+        position: relative;
+        right: 0;
+        @include transition(0.3s);
+    }
+    &:hover{
+        background-color: $yellow-cl;
+        @include transition(0.3s);
+        i{
+            margin-left: 22px;
+            right: -10px;
+            @include transition(0.3s);
+        }
+    }
+    @include xs{
+        padding: 8px,30px;
+    }
+}
